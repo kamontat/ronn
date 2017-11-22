@@ -60,4 +60,4 @@ echo "Need to validate[T|F]? "
 read -rn 1 valid
 echo ""
 
-[[ "$valid" == "T" ]] || [[ "$valid" == "t" ]] && git command --amend
+[[ "$valid" == "T" ]] || [[ "$valid" == "t" ]] && git commit --amend
