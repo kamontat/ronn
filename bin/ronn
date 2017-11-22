@@ -184,12 +184,11 @@ documents.each do |doc|
     if build
       path = doc.path_for(format)
       case format
-      when 'html'
-        warn "%9s: %-43s%15s" % [format, path, '+' + doc.styles.join(',')]
-      when 'roff', 'html_fragment', 'markdown'
-        warn "%9s: %-43s" % [format, path]
+        when 'html'
+          printf "%9s: %-43s%15s\n" % [format, path, '+' + doc.styles.join(',')]
+        when 'roff', 'html_fragment', 'markdown'
+          printf "%9s: %-43s\n" % [format, path]
       end
-
       output = doc.convert(format)
       File.open(path, 'wb') { |f| f.puts(output) }
 
