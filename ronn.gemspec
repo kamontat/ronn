@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'ronn'
-  s.version = '0.7.4'
+  s.version = '0.7.5'
   s.date = '2017-11-22'
 
   s.description = "Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web."

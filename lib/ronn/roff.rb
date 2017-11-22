@@ -42,7 +42,7 @@ module Ronn
         bottom_left = "#{organization}"
       end
 
-      macro "TH", %["#{escape(name.upcase)}" "#{section}" "#{date.strftime('%B, %d %Y')}" "#{bottom_left}" "#{manual}"]
+      macro "TH", %["#{escape(name.upcase)}" "#{section}" "#{date.strftime('%B, %d %Y')}" "#{escape(bottom_left.upcase)}" "#{manual}"]
     end
 
     def remove_extraneous_elements!(doc)
