@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = '0.7.4'
   s.date = '2017-11-22'
 
-  s.description = "Builds manuals"
+  s.description = "Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web."
   s.summary     = "Builds manuals"
   s.homepage    = "http://kamontat.github.io/ronn"
 
@@ -108,5 +108,4 @@ Gem::Specification.new do |s|
   s.has_rdoc = true
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Ronn"]
   s.require_paths = %w[lib]
-  s.rubygems_version = '2.4.0'
 end
