@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'ronn'
-  s.version = '0.7.5'
-  s.date = '2017-11-22'
+  s.version = '0.7.4'
+  s.date = '2018-01-13'
 
   s.description = "Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web."
   s.summary     = "Builds manuals"
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     Rakefile
     bin/ronn
     config.ru
+    git_commit.sh
     lib/ronn.rb
     lib/ronn/document.rb
     lib/ronn/index.rb
