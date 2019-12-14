@@ -171,6 +171,7 @@ module Ronn
     # the current time.
     def date
       return @date if @date
+      return Time.at(ENV['SOURCE_DATE_EPOCH'].to_i).gmtime if not ENV['SOURCE_DATE_EPOCH'].nil?
       return File.mtime(path) if File.exist?(path)
       Time.now
     end
